@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+#conteudo{
+	border: none;
+	width:100%;
+	position:relative;
+	}
+#slider{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:16px; 
+	height:16px; 
+	background:#ECF0F1; 
+	z-index:1; 
+	position:relative;
+	border: 2px solid #3d4097;
+	}
+
+#containerSlider{
+	width:40px;
+	height:20px;
+	background:#3d4097;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+
+	}
+.on, .off{
+	color:#fff;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif !important;
+	}
+.on, .off:active{
+	color:#fff;
+	text-decoration:none;
+	}
+	
+.on{
+	float:right; padding-right:5px; margin-top:-20px;
+	}
+	
+	.off{
+	float:left; padding-left:4px; margin-top:-20px;
+	}

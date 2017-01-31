@@ -1,0 +1,732 @@
+/*
+Theme Name: Participação Social
+Theme URI: -
+Description: Tema criado para o site institucional do Projeto Participação Social
+Author: Danilo Tudisco
+Author URI: http://danilotudisco.com.br
+Version: 1.0
+License: Copyright 2013
+License URI: -
+Tags: -
+Text Domain: ParticipacaoSocial
+*/
+
+
+/* =Reset default browser CSS. 
+-------------------------------------------------------------- */
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* tags */
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	color:#4c4c4c;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight:normal;
+	font-size:12px;
+}
+h1 {
+	color:#3d4097;
+	font-size:16px;
+	font-weight:bold;
+}
+h2 {
+	color:#3d4097;
+	font-size: 1.16;
+	font-weight:bold;
+}
+h3 {
+	color:#3d4097;
+	font-size:1em;
+	font-weight:bold;
+}
+a {
+	color:#26af5f;
+	font-style:italic;
+	font-weight:bold;
+}
+dl {
+	margin:0;
+	padding:0;
+	line-height:24px;
+}
+dt {
+	float:left;
+	padding-right:10px;
+}
+dd {
+	margin:0;
+	padding:0;
+	float:left;
+	padding-right:10px;
+	padding-left:10px;
+}
+video {
+	border:8px solid #efede7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left:5px;
+}
+.video {
+	border:8px solid #efede7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-left:5px;
+}
+header {
+	background:#3d4097;
+	height:36px;
+	padding: 0 20px 0 10px;
+	width:100%;
+	z-index:9;
+}
+header, footer {
+	color:#fff;
+	text-decoration:none;
+}
+footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:25px;
+	background:#2c3e50;
+}
+input {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e5e5e5 inset;
+	height:16px;
+	line-height:22px;
+}
+input:disabled {
+	background:#fafafa !important;
+	color:#CCC !important;
+	border: 2px solid #f1f1f1 !important;
+	line-height:14px !important;
+}
+input[type="button"], input[type="submit"], button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#34495e;
+	padding: 2px 20px 4px 20px;
+	margin-top:-1px;
+	border:0;
+	text-transform:uppercase;
+	color:#fff;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	cursor:pointer;
+	height:23px;
+	line-height:20px;
+}
+progress {
+	background-color:transparent;
+	border: 0;
+	height: 10px;
+	width:80px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+progress::-webkit-progress-bar {
+ background-color: transparent;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+progress::-webkit-progress-value {
+ background-color: #aacee6;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+progress::-moz-progress-bar {
+ background-color: transparent;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+ul {
+	padding-left:20px;
+}
+li {
+	padding-bottom:10px;
+}
+
+iframe{
+	overflow:hidden;
+	}
+/* tags */
+/* estrutura */
+#main {
+	padding-top:60px;
+}
+#content {
+	min-height:100%;
+}
+#headerA {
+	background:#3d4097;
+	height:36px;
+	padding: 0 20px 0 10px;
+	width:100%;
+	z-index:3;
+}
+#cabecalhoA {
+	height:150px;
+	padding: 0 20px 0 10px;
+	position:fixed;
+	width:100%;
+}
+#body {
+	padding: 0 20px 0 20px;
+}
+/* estrutura */
+/* componentes */
+#message {
+	display: block;
+	width:70%;
+	float:left;
+}
+#exportXls {
+	float:right;
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/xls.png) no-repeat;
+	padding-left:25px;
+	padding-bottom:5px;
+}
+#formAvancada {
+	display: none;
+}
+#combo {
+	background:#fafafa;
+	display:none;
+	width:1070px;
+	box-shadow: 0 2px 5px #e5e5e5;
+	padding: 10px;
+	border: 1px solid #eee;
+}
+#abrirCombo {
+	width:200px;
+	background:#fff;
+	height:22px;
+	display:table;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e5e5e5;
+}
+#abrirCombo a {
+	width:20px;
+	height:22px;
+	display:block;
+	background:#34495e;
+	float:right;
+	line-height:22px;
+	padding-left:11px;
+	color:#fff;
+	text-decoration:none;
+	font-style:normal;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#message {
+	padding: 10px;
+	font-size: 1.16;
+	text-align:center;
+	background:#ddd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#toolBar {
+	top:28px;
+	left:0;
+	margin-top:4px;
+	padding: 0;
+	position: relative;
+	width:100%;
+	height:153px;
+	z-index:4;
+	background:#fff;
+}
+
+
+@-moz-document url-prefix() {
+
+#toolBar {
+	top:28px;
+	left:0;
+	margin-top:4px;
+	padding: 0;
+	position:relative;
+	width:100%;
+	height:153px;
+	z-index:4;
+	background:#fff;
+}
+
+}
+
+#contentToolBar {
+	height:145px;
+	display:block;
+	z-index:3;
+	margin-top:-32px;
+	margin-bottom:24px;
+	padding:20px;
+	background:#fff;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+
+@-moz-document url-prefix() {
+    #contentToolBar {
+	height:145px;
+	display:block;
+	z-index:3;
+	margin-top:-32px;
+	margin-bottom:24px;
+	padding:20px;
+	background:#fff;
+	border-bottom: 1px solid #e4e4e4;
+}
+}
+
+
+
+
+
+#menuHomeA {
+	float:left;
+	padding-top:5px;
+}
+#menuNavHomeA {
+	float:right;
+	padding:5px 10px 0 0;
+}
+#menuNavHomeA a, #menuHomeA a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	display:block;
+}
+#menuNavHomeA a:hover, #menuHomeA a:hover {
+	background:#5456c1;
+	font-weight:bold;
+	color:#fff;
+	padding:3px 10px 4px 10px;
+	line-height:30px;
+	margin:-6px -10px 0 -10px;
+}
+#menuNavHomeA a:visited, #menuHomeA a:visited {
+	background:#5456c1;
+}
+#menuNavHomeA dt {
+}
+#menuNavHomeA dd {
+}
+#menuHome {
+	float:left;
+	padding-top:5px;
+}
+#menuNavHome {
+	float:right;
+	padding:5px 10px 0 0;
+}
+#menuNavHome a, #menuHome a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	display:block;
+}
+#menuNavHome a:hover, #menuHome a:hover {
+	background:#5559be;
+	padding:3px 10px 4px 10px;
+	line-height:30px;
+	margin:-6px -10px 0 -10px;
+}
+#menuNavHome a:visited, #menuHome a:visited {
+	background:#5559be;
+}
+#menuNavHome dt {
+	border-right: 1px solid #5559be;
+}
+#menuNavHome dd {
+	border-left: 1px solid #2b2d79;
+	border-right: 1px solid #5559be;
+}
+#menuFooter {
+	font-size: 0.83em;
+	float:right;
+	line-height:25px;
+	width: 370px;
+}
+#menuFooter a {
+	color:#fff;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	display:block;
+}
+#hrDiv {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/hrShadow.png) no-repeat;
+	background-attachment:local;
+	background-position:center;
+	height:20px;
+	margin:0 auto;
+	margin-top:-61px;
+	clear:both;
+	width:100%;
+	position: relative;
+	z-index:-1;
+}
+#vrDiv {
+	width:30px;
+	height:380px;
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/vrShadow.png) no-repeat;
+	float:left;
+	margin: 0 17px 0 17px;
+}
+.formLogin {
+	float:right;
+}
+.labelLogin {
+	background:#34495e;
+	width:84px;
+	height:22px;
+	line-height:22px;
+	color:#fff;
+	display:block;
+	float:left;
+	text-align:center;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 0 5px 0 5px;
+}
+.inputMail {
+	-webkit-border-top-right-radius: 5px !important;
+	-webkit-border-bottom-right-radius: 5px !important;
+	-moz-border-radius-topright: 5px !important;
+	-moz-border-radius-bottomright: 5px !important;
+	border-top-right-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+	-webkit-border-top-left-radius: 0px !important;
+	-webkit-border-bottom-left-radius: 0px !important;
+	-moz-border-radius-topleft: 0px !important;
+	-moz-border-radius-bottomleft: 0px !important;
+	border-top-left-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+	border: 1px solid #e5e5e5 inset;
+	height:16px;
+	width:200px;
+	line-height:22px;
+	float:left;
+	margin: 0 0 0 -3px;
+}
+.inputSenha {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #e5e5e5 inset;
+	height:16px;
+	line-height:22px;
+	float:left;
+	margin:0 10px 0 10px;
+}
+.inputButton {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background:#34495e;
+	padding: 4px 20px 4px 20px;
+	margin-top:-1px;
+	border:0;
+	text-transform:uppercase;
+	color:#fff;
+	font-style:normal;
+	font-weight:normal;
+	text-decoration:none;
+	cursor:pointer;
+	height:23px;
+	line-height:20px;
+}
+#busca {
+	width:800px;
+	margin:auto;
+}
+.containerMessage {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 10px;
+	clear:both;
+	height:50px;
+	margin-top:30px;
+	border-top:1px solid #dedede;
+	background-image: linear-gradient(bottom, rgb(255,255,255) 0%, rgb(240,240,240) 69%);
+	background-image: linear-gradient(bottom, rgb(255,255,255) 0%, rgb(249,249,249) 69%);
+	background-image: -o-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(249,249,249) 69%);
+	background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(249,249,249) 69%);
+	background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(249,249,249) 69%);
+	background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(249,249,249) 69%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(255,255,255)), color-stop(0.69, rgb(249,249,249)) );
+}
+.videoContainer {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/videoShadow.png) no-repeat;
+	height:325px;
+	width:535px;
+	min-width:535px;
+	float:left;
+}
+#homeSocialMedia {
+	float:left;
+}
+.widgetText {
+	list-style:none;
+	padding:0;
+}
+.widget-area {
+	float:left;
+	width:300px;
+}
+/*Rating*/
+      .rating {
+	overflow: hidden;
+	display: inline-block;
+}
+.rating-input {
+	position: absolute;
+	left: 0;
+	top: -50px;
+}
+ .rating:hover .rating-star:hover, .rating:hover .rating-star:hover ~ .rating-star, .rating-input:checked ~ .rating-star {
+ background-position: 0 0;
+}
+.rating-star, .rating:hover .rating-star {
+	float: right;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('http://participacaocidada.com.br/wp-content/uploads/2013/10/star.png') 0 -16px;
+}
+/*Rating*/
+/* componentes */
+/* itens */
+.listItem {
+	padding-left:20px !important;
+	list-style:none !important;
+	}
+
+.logo {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/logo.png) no-repeat;
+	font-size:0;
+	color: transparent !important;
+	height:88px;
+	width:255px;
+	float:left;
+	margin-top:-10px;
+}
+.logoInterna {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/logo.png) no-repeat;
+	background-size:contain;
+	font-size:0;
+	color: transparent !important;
+	height:48px;
+	width:140px;
+	float:left;
+	margin-top:-10px;
+}
+.right {
+	float:right;
+}
+.left {
+	float:left;
+}
+.facebookHome {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/homeSprite.png) no-repeat 0 0;
+	font-size:0;
+	color: transparent !important;
+	height:20px;
+	width:20px;
+	float:left;
+	margin:3px 0 0 0;
+}
+.twitterHome {
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/homeSprite.png) no-repeat -26px 0;
+	font-size:0;
+	color: transparent !important;
+	height:20px;
+	width:20px;
+	float:left;
+	margin:3px 0 0 0;
+}
+.destaque {
+	text-transform:uppercase;
+}
+.clear {
+	clear:both;
+	padding-top:20px;
+}
+.hidden {
+	display:none;
+}
+.ibpc {
+	letter-spacing:-7px;
+	background:url(http://participacaocidada.com.br/wp-content/uploads/2013/10/ibpc.png) no-repeat;
+	width:100px;
+	height:100px;
+	float:right;
+	text-align:center;
+	padding: 30px 5px 0 0;
+	font-size: 5em;
+	font-weight:bold;
+	margin-left:20px;
+}
+/* itens */
+/*grid/list*/
+.centraliza {
+	text-align: center;
+}
+#tabela tr th {
+	background: #3d4097;
+	color:#FFF;
+	border:1px solid #fff;
+	padding:0;
+	margin:0;
+	height:20px;
+	line-height:20px;
+}
+#tabela tr:nth-child(odd) td {
+	background: none repeat scroll 0 0 #f5f5f5;
+	border:1px solid #fff;
+	padding:0;
+	margin:0;
+	height:20px;
+	line-height:20px;
+}
+#tabela tr:nth-child(even) td {
+	background: none repeat scroll 0 0 #fafafa;
+	border:1px solid #fff;
+	padding:0;
+	margin:0;
+	height:20px;
+	line-height:20px;
+}
+#tabela {
+	border:none;
+	padding:0;
+	margin:0;
+	height:20px;
+	line-height:20px;
+	width:100%;
+	border-collapse:collapse;
+	color:#4c4c4c;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight:normal;
+	font-size:1em;
+}
+.rating {
+	overflow: hidden;
+	display: inline-block;
+}
+.rating-input {
+	position: absolute;
+	left: 0;
+	top: -50px;
+}
+ .rating:hover .rating-star:hover, .rating:hover .rating-star:hover ~ .rating-star, .rating-input:checked ~ .rating-star {
+ background-position: 0 0;
+}
+.rating-star, .rating:hover .rating-star {
+	float: right;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url('http://participacaocidada.com.br/wp-content/uploads/2013/10/star.png') 0 -16px;
+}
+progress {
+	background-color: #ccc;
+	border: 0;
+	height: 10px;
+	width:80px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+progress::-webkit-progress-bar {
+ background-color: #ccc;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+progress::-webkit-progress-value {
+ background-color: #aacee6;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+progress::-moz-progress-bar {
+ background-color: #aacee6;
+ border: 0;
+ height: 10px;
+ width:80px;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+}
+progress:after{
+color: #3d4097;
+content: attr(value)" %";
+position: absolute;
+margin-top: -14px;
+margin-left: 30px;
+z-index: 1;
+font-weight: normal;
+}
+
+progress.progressList:after{
+color: #3d4097;
+content: attr(value)" %";
+position: absolute;
+margin-top: -11px;
+margin-left: 30px;
+z-index: 1;
+font-weight: normal;
+}
+
+/*grid/list*/
